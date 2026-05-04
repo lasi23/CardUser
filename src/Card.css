@@ -1,3 +1,6 @@
 .card {
     border: 2px solid oldlace;
+    & .bob{
+        width: 50vh;
+    }
 }
