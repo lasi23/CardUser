@@ -1,11 +1,11 @@
 import './Card.css'
 
-function Card() {
+function Card({pseudo, image, email, description}) {
     return <article className='card'>
-        <img className='bob' src="src\assets\Gemini_Generated_Image_qm7obtqm7obtqm7o.png" alt="" />
-        <h2>BoB</h2>
-        <h3>eponge@carre.net</h3>
-        <p>C'est une éponge carré</p>
+        <img className='bob' src={image} alt="" />
+        <h2>{pseudo}</h2>
+        <h3>{email}</h3>
+        <p>{description}</p>
     </article>
 }
 
