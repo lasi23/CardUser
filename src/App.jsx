@@ -5,9 +5,24 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Card from './Card'
 
-const USER01 = {image:"https://picsum.photos/200", pseudo:"bob", email:"lemail@bob.fr", description:"ici une description"};
-const USER02 = {image:"https://picsum.photos/200", pseudo:"charle", email:"autrmail@charle.fr", description:"ici une description"};
-const USER03 =  {image:"https://picsum.photos/200", pseudo:"bill", email:"dermail@cha.fr", description:"ici une description"};
+const USER01 = {
+  image:"https://picsum.photos/200", 
+  pseudo:"bob", 
+  email:"lemail@bob.fr", 
+  description:"ici une description"
+};
+const USER02 = {
+  image:"https://picsum.photos/200", 
+  pseudo:"charle", 
+  email:"autrmail@charle.fr", 
+  description:"ici une description"
+};
+const USER03 =  {
+  image:"https://picsum.photos/200",
+  pseudo:"bill", 
+  email:"dermail@cha.fr", 
+  description:"ici une description"
+};
 function App() {
 
   return <>
