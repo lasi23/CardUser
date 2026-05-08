@@ -5,29 +5,36 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Card from './Card'
 
+// ************************tableau utilisateur************************
 const TAB_USERS = [{
   image:"https://picsum.photos/200", 
   pseudo:"bob", 
   email:"lemail@bob.fr", 
-  description:"ici une description"
+  description:"ici une description",
+  sexe:"non-binaire"
 },
 {
   image:"https://picsum.photos/200", 
   pseudo:"charle", 
   email:"autrmail@charle.fr", 
-  description:"ici une description"
+  description:"ici une description",
+  sexe:"femme"
 },
 {
   image:"https://picsum.photos/200",
   pseudo:"bill", 
   email:"dermail@cha.fr", 
-  description:"ici une description"
+  description:"ici une description",
+  sexe:"homme"
 }]
 
 function App() {
 
   return <>
-    <h1>Liste des utilisateurs</h1>
+      
+    <h1>{TAB_USERS.length > 0 ? "Liste des utilisateurs" : "Aucun utilisateur d’inscrit"}</h1>
+    
+    {TAB_USERS.length > 0 && <p>il y a {TAB_USERS.length} utilisateurs inscrits !</p>   }
 
     {TAB_USERS.map((tabusr, index) =>
       <Card 
@@ -35,9 +42,10 @@ function App() {
       image={tabusr.image} 
       pseudo={tabusr.pseudo} 
       email={tabusr.email}
-      description={tabusr.description}/>
-    )}  
-    
+      description={tabusr.description}
+      sexe={tabusr.sexe}
+      />     
+    )}      
   </>
   
 }

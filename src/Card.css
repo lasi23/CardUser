@@ -1,6 +1,18 @@
+
+
 .card {
     border: 2px solid oldlace;
     & .bob{
         width: 50vh;
     }
+}
+/* **************color sex****************** */
+.pink{
+    background: pink;
+}
+.lemonchiffon {
+    background: lemonchiffon;
+}
+.lightblue{
+    background: lightblue;
 }
