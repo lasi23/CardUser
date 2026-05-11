@@ -1,22 +1,24 @@
 
-
-.card {
-    border: 2px solid oldlace;
-    & .bob{
-        width: 50vh;
-    }
-}
-/* **************color sex****************** */
-.pink{
-    background: pink;
-}
-.lemonchiffon {
-    background: lemonchiffon;
-}
-.lightblue{
-    background: lightblue;
+.card{
+    background-color: #333;
+    width: 35vw;
+    padding : 1rem;
+    margin-bottom: 3rem;
 }
 
-.border{
-    border: 2px solid red;
+
+.homme{
+    background-color: lightblue;
+}
+
+.femme{
+    background-color: pink;
+}
+
+.non-binaire{
+    background-color: lemonchiffon;
+}
+
+.border {
+    border : 3px red solid
 }
