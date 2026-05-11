@@ -16,3 +16,7 @@
 .lightblue{
     background: lightblue;
 }
+
+.border{
+    border: 2px solid red;
+}

@@ -38,6 +38,8 @@ function App() {
 
     {TAB_USERS.map((tabusr, index) =>
       <Card 
+      onMouseOver={e=>handleMouseOver(e)}
+      onMouseLeave={e=>handleMouseLeave(e)}
       key={index} 
       image={tabusr.image} 
       pseudo={tabusr.pseudo} 
