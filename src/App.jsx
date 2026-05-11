@@ -36,15 +36,9 @@ function App() {
     
     {TAB_USERS.length > 0 && <p>il y a {TAB_USERS.length} utilisateurs inscrits !</p>   }
 
-    {TAB_USERS.map((tabusr, index) =>
-      <Card 
-      key={index} 
-      image={tabusr.image} 
-      pseudo={tabusr.pseudo} 
-      email={tabusr.email}
-      description={tabusr.description}
-      sexe={tabusr.sexe}
-      />     
+    {TAB_USERS.map((user, index) =>{
+      return <Card key={index} user={user}/>  
+    }
     )}      
   </>
   

@@ -1,20 +1,13 @@
 import './Card.css'
 
-function Card({pseudo, image, email, description, sexe}) {
+function Card({user}) {
 
-    const className =
-        sexe === "homme"
-        ? "lightblue"
-        : sexe === "femme"
-        ? "pink"
-        : "lemonchiffon";
 
-    return <article className='card' className={className}>
-        <img className='bob' src={image} alt="avatar" />
-        <h2>{pseudo}</h2>
-        <h3>{email}</h3>
-        <p>{description}</p>
-        <p>{sexe}</p>
+    return <article className={'card'+user.sexe}>
+        <img src={user.image} alt="avatar" />
+        <h2>{user.pseudo}</h2>
+        <h3>{user.email}</h3>
+        <p>{user.description}</p>
     </article>
 }
 
